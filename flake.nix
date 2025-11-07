@@ -34,6 +34,14 @@
             python3
             python3Packages.numpy
             python3Packages.matplotlib
+            python3Packages.pandas
+            python3Packages.pypdf2
+            
+            # PDF tools
+            poppler-utils  # provides pdftotext, pdfinfo, etc.
+            
+            # Video encoding
+            ffmpeg
           ];
 
           shellHook = ''

@@ -344,6 +344,8 @@ inline bool OutputWriter::writeParticles(const ParticleType* particles, S64 num_
     // Update metadata
     using namespace UnitSystem;
     metadata_.unit_system_name = getUnitSystemName<UnitSystem>();
+    // Fill time unit according to the selected unit system so writers can include it
+    metadata_.time_unit = getUnitString<TimeDim, UnitSystem>();
 
     // Write data using derived class implementation
     bool success = writeParticleData<ParticleType, UnitSystem>(particles, num_particles);
@@ -431,6 +433,7 @@ inline bool HDF5Writer::writeHeader() {
 
     // Write metadata as attributes
     writeAttribute(file_id_, "Time", metadata_.time);
+    writeAttribute(file_id_, "TimeUnit", metadata_.time_unit.c_str());
     writeAttribute(file_id_, "TotalParticles", metadata_.total_particles);
     writeAttribute(file_id_, "UnitSystem", metadata_.unit_system_name.c_str());
 #ifdef PARTICLE_SIMULATOR_MPI_PARALLEL

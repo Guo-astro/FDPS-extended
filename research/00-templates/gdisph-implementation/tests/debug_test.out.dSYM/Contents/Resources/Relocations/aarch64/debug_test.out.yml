@@ -1,0 +1,31 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     debug_test.out
+relocations:
+  - { offset: 0x611E, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x36200, symBinAddr: 0x1000080E0, symSize: 0x0 }
+  - { offset: 0x670D, size: 0x8, addend: 0x0, symName: __ZL9NAME_SIZE, symObjAddr: 0x1430, symBinAddr: 0x1000039A0, symSize: 0x0 }
+  - { offset: 0x6729, size: 0x8, addend: 0x0, symName: __ZL13DEBUG_FLAG_DD, symObjAddr: 0x1454, symBinAddr: 0x1000039C4, symSize: 0x0 }
+  - { offset: 0x6AC7, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_debug_test.cpp, symObjAddr: 0x154C, symBinAddr: 0x100003718, symSize: 0x1C }
+  - { offset: 0x6ADE, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x14FC, symBinAddr: 0x1000036C8, symSize: 0x50 }
+  - { offset: 0x6AF9, size: 0x8, addend: 0x0, symName: __ZNK17ParticleSimulator7Vector3IdEmlEd, symObjAddr: 0x12D4, symBinAddr: 0x100003650, symSize: 0x78 }
+  - { offset: 0x6B2C, size: 0x8, addend: 0x0, symName: __ZN17ParticleSimulatormlEdRKNS_7Vector3IdEE, symObjAddr: 0x124C, symBinAddr: 0x1000035C8, symSize: 0x88 }
+  - { offset: 0x6B66, size: 0x8, addend: 0x0, symName: __ZN17ParticleSimulator7Vector3IdEaSERKS1_, symObjAddr: 0x11FC, symBinAddr: 0x100003578, symSize: 0x50 }
+  - { offset: 0x6B9D, size: 0x8, addend: 0x0, symName: __ZNK17ParticleSimulator7Vector3IdEplERKS1_, symObjAddr: 0x1174, symBinAddr: 0x1000034F0, symSize: 0x88 }
+  - { offset: 0x6BF8, size: 0x8, addend: 0x0, symName: __ZN17ParticleSimulator7Vector3IdEC1Ed, symObjAddr: 0x1130, symBinAddr: 0x1000034AC, symSize: 0x44 }
+  - { offset: 0x6C24, size: 0x8, addend: 0x0, symName: __ZNK17ParticleSimulator7Vector3IdEmlERKS1_, symObjAddr: 0x10C8, symBinAddr: 0x100003444, symSize: 0x68 }
+  - { offset: 0x6C5B, size: 0x8, addend: 0x0, symName: __ZNK17ParticleSimulator7Vector3IdEmiERKS1_, symObjAddr: 0x1040, symBinAddr: 0x1000033BC, symSize: 0x88 }
+  - { offset: 0x6C8E, size: 0x8, addend: 0x0, symName: __ZSt3minIdERKT_S2_S2_, symObjAddr: 0xFFC, symBinAddr: 0x100003378, symSize: 0x44 }
+  - { offset: 0x6CD4, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xE1C, symBinAddr: 0x100003198, symSize: 0x1E0 }
+  - { offset: 0x6D8F, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver11computeFluxEdRKN17ParticleSimulator7Vector3IdEEddS5_dS5_, symObjAddr: 0x790, symBinAddr: 0x100002B0C, symSize: 0x68C }
+  - { offset: 0x70F3, size: 0x8, addend: 0x0, symName: __ZN6GDISPH17HLLCRiemannSolverC1Ed, symObjAddr: 0x710, symBinAddr: 0x100002A8C, symSize: 0x80 }
+  - { offset: 0x711F, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver16computeStarStateEdddRKN17ParticleSimulator7Vector3IdEEdddRdRS3_S6_, symObjAddr: 0x604, symBinAddr: 0x100002980, symSize: 0x10C }
+  - { offset: 0x7200, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver27computeFluxFromConservativeEdRKN17ParticleSimulator7Vector3IdEEdddS5_RdRS3_S6_, symObjAddr: 0x4D8, symBinAddr: 0x100002854, symSize: 0x12C }
+  - { offset: 0x72B9, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver23computeConservativeVarsEdRKN17ParticleSimulator7Vector3IdEEdRdRS3_S6_, symObjAddr: 0x3FC, symBinAddr: 0x100002778, symSize: 0xDC }
+  - { offset: 0x7340, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver18estimateWaveSpeedsEddddddddRdS1_S1_, symObjAddr: 0x1F4, symBinAddr: 0x100002570, symSize: 0x208 }
+  - { offset: 0x7455, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver18computeTotalEnergyEdRKN17ParticleSimulator7Vector3IdEEd, symObjAddr: 0x16C, symBinAddr: 0x1000024E8, symSize: 0x88 }
+  - { offset: 0x74C8, size: 0x8, addend: 0x0, symName: __ZNK6GDISPH17HLLCRiemannSolver17computeSoundSpeedEdd, symObjAddr: 0xF4, symBinAddr: 0x100002470, symSize: 0x78 }
+  - { offset: 0x7526, size: 0x8, addend: 0x0, symName: __ZN6GDISPH11RiemannFluxC1Ev, symObjAddr: 0xB0, symBinAddr: 0x10000242C, symSize: 0x44 }
+  - { offset: 0x7546, size: 0x8, addend: 0x0, symName: __ZSt3maxIdERKT_S2_S2_, symObjAddr: 0x6C, symBinAddr: 0x1000023E8, symSize: 0x44 }
+  - { offset: 0x75C9, size: 0x8, addend: 0x0, symName: __ZN17ParticleSimulator7Vector3IdEC1Eddd, symObjAddr: 0x20, symBinAddr: 0x10000239C, symSize: 0x4C }
+  - { offset: 0x7601, size: 0x8, addend: 0x0, symName: __ZSt3absd, symObjAddr: 0x0, symBinAddr: 0x10000237C, symSize: 0x20 }
+...

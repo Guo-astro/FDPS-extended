@@ -434,3 +434,222 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_d8526
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao/OpenMPTryFlag.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d8526.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao/OpenMPTryFlag.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-PNU3Ao/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1283 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1327 (_MPI_try_staged_settings)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1650 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:24 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_88215
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm/test_mpi.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_88215.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm/test_mpi.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-J5awNm/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_bfcd7
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3/OpenMPTryFlag.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_bfcd7.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3/OpenMPTryFlag.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-x5gzY3/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1283 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1327 (_MPI_try_staged_settings)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1650 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:24 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_ecba1
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed/test_mpi.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_ecba1.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed/test_mpi.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-Sl4jed/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_f4d2b
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb/OpenMPTryFlag.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f4d2b.dir/OpenMPTryFlag.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb/OpenMPTryFlag.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-QyAYcb/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1283 (try_compile)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1327 (_MPI_try_staged_settings)"
+      - "/nix/store/qvv2ddin29xa8fqmsv567b6xlnhbvpv0-cmake-3.31.7/share/cmake-3.31/Modules/FindMPI.cmake:1650 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:24 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH"
+      binary: "/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -O3 -ffast-math -funroll-loops"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH'
+        
+        Run Build Command(s): /run/current-system/sw/bin/ninja -v cmTC_0f0fd
+        [1/2] /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH/test_mpi.cpp
+        FAILED: [code=1] CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o 
+        /usr/bin/clang++   -O3 -ffast-math -funroll-loops  -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_0f0fd.dir/test_mpi.cpp.o -c /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH/test_mpi.cpp
+        /Users/guo-opt-p148/FDPS/build/CMakeFiles/CMakeScratch/TryCompile-5UsDrH/test_mpi.cpp:1:10: fatal error: 'mpi.h' file not found
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

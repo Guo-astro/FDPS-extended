@@ -512,7 +512,7 @@ class ParticleSystem {
     const Tptcl& operator[](const S32 id) const { return ptcl_[id]; }
     Tptcl& getParticle(const S32 id = 0) { return ptcl_[id]; }
     const Tptcl& getParticle(const S32 id = 0) const { return ptcl_[id]; }
-    Tptcl* getParticlePointer(const S32 id = 0) const { return ptcl_ + id; }
+    Tptcl* getParticlePointer(const S32 id = 0) const { return ptcl_.getPointer(id); }
     // S32 getNumberOfParticleLocal() const {return n_ptcl_;}
     S32 getNumberOfParticleLocal() const { return ptcl_.size(); }
     ////////////////

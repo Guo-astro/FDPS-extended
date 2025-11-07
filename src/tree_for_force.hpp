@@ -920,7 +920,7 @@ void calcForceNoWalkPMM(Tfunc_ep_ep pfunc_ep_ep, Tfunc_ep_sp pfunc_ep_sp, const 
     template <typename Tpsys>
     void setParticleLocalTree(const Tpsys &psys, const bool clear = true);  // deprecated
     void makeLocalTree(DomainInfo &dinfo);                     // deprecated
-    void makeLocalTree(const F64 l, F64vec &c = F64vec(0.0));  // deprecated
+    void makeLocalTree(const F64 l, const F64vec &c);          // deprecated - fixed signature
     void calcMomentGlobalTree();                               // deprecated
     void makeGlobalTree(DomainInfo &dinfo);                    // deprecated
     template <class Tfunc_ep_ep>

@@ -15,14 +15,16 @@ void TreeForForce<TSM, Tforce, Tepi, Tepj, Tmomloc, Tmomglb, Tspj, CALC_DISTANCE
 #endif
 }
 template <class TSM, class Tforce, class Tepi, class Tepj, class Tmomloc, class Tmomglb, class Tspj, enum CALC_DISTANCE_TYPE CALC_DISTANCE_TYPE>
-void TreeForForce<TSM, Tforce, Tepi, Tepj, Tmomloc, Tmomglb, Tspj, CALC_DISTANCE_TYPE>::makeLocalTree(const F64 l, F64vec& c) {
+void TreeForForce<TSM, Tforce, Tepi, Tepj, Tmomloc, Tmomglb, Tspj, CALC_DISTANCE_TYPE>::makeLocalTree(const F64 l, const F64vec& c) {
 #if 1
-    setRootCell(l, c);
+    F64vec c_copy = c;  // Make a mutable copy
+    setRootCell(l, c_copy);
     mortonSortLocalTreeOnly(false);
     epi_org_.freeMem();
     linkCellLocalTreeOnly();
 #else
-    setRootCell(l, c);
+    F64vec c_copy = c;  // Make a mutable copy
+    setRootCell(l, c_copy);
     mortonSortLocalTreeOnly();
     linkCellLocalTreeOnly();
 #endif

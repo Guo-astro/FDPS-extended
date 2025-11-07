@@ -33,3 +33,78 @@
 *.exe
 *.out
 *.app
+
+# Build directories
+build/
+Build/
+BUILD/
+cmake-build-*/
+.cmake/
+
+# Output directories
+result/
+results/
+output/
+outputs/
+data/
+
+# Test output
+test_*.csv
+test_*.h5
+test_*.dat
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+*.egg-info/
+.uv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+CTestTestfile.cmake
+
+# Google Test
+googletest/
+gtest/
+lib/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Research projects output
+research/*/output/
+research/*/build/
+research/*/*.out
+research/*/*.o
+

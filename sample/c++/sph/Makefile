@@ -1,8 +1,13 @@
 PS_PATH = -I ../../../src/
 
-#CC = g++
+# Compiler selection: Check if mpicxx is available
+MPICXX := $(shell command -v mpicxx 2> /dev/null)
+ifndef MPICXX
+    $(error mpicxx not found! Please install OpenMPI or MPICH. On macOS: brew install open-mpi)
+endif
+
 CC = mpicxx
-CFLAGS = -std=c++17 -O3 -ffast-math -funroll-loops 
+CFLAGS = -std=c++17 -O3 -ffast-math -funroll-loops
 CFLAGS += -DPARTICLE_SIMULATOR_THREAD_PARALLEL -fopenmp
 CFLAGS += -DPARTICLE_SIMULATOR_MPI_PARALLEL
 

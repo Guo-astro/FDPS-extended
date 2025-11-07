@@ -1,0 +1,3 @@
+/Users/guo-opt-p148/FDPS/sample/c++/sph/build/CMakeFiles/sph.out.dir
+/Users/guo-opt-p148/FDPS/sample/c++/sph/build/CMakeFiles/edit_cache.dir
+/Users/guo-opt-p148/FDPS/sample/c++/sph/build/CMakeFiles/rebuild_cache.dir

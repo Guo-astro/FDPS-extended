@@ -1,0 +1,13 @@
+[requires]
+# No external dependencies required - FDPS is header-only
+# Add dependencies here if needed in the future
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+# Compiler options
+
+[imports]
+# Import any binaries if needed
